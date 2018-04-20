@@ -17,6 +17,9 @@ void loop()
   {
   Wire.beginTransmission(0x0c );
   Wire.write(0x31); ///// channel one
+  //Wire.write(0x32); ///// channel two
+  //Wire.write(0x34); ///// channel three
+  //Wire.write(0x38); ///// channel four
   Wire.write(i >> 4);        // 8 MSB
   Wire.write((i & 15) << 4); //4 LSB
   delay(20);
