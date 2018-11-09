@@ -19,6 +19,10 @@ int set_port ( int port_value)
   Serial.print("\n");
 }
 
+/// at DAC vlaue 290 the current output will be around 4mA and 
+///at DAC vlaue 1500 the current output will be around 20mA 
+/// you can change these values to tune the 4-20mA output
+
 int set_volt ( int raw_value)
 {
   Wire.beginTransmission(address_MCP4725 );
